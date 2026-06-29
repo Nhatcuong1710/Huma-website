@@ -44,7 +44,9 @@ export default function Founder() {
                 Founder &amp; Recruitment Consultant
               </p>
               <a
-                href="#contact"
+                href="https://www.linkedin.com/in/nhatcuong1710/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-semibold text-ink-muted transition-colors hover:bg-brand-50 hover:text-brand-700"
               >
                 <Linkedin className="h-4 w-4" />
