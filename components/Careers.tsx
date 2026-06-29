@@ -3,9 +3,24 @@ import SectionHeading from "@/components/SectionHeading";
 import Reveal from "@/components/Reveal";
 
 const OPENINGS = [
-  { title: "Technical Recruitment Consultant", location: "Ho Chi Minh City, Vietnam", type: "Full-time" },
-  { title: "IT Talent Sourcer", location: "Ho Chi Minh City, Vietnam", type: "Full-time" },
-  { title: "HR Consulting Associate", location: "Ho Chi Minh City, Vietnam", type: "Full-time" },
+  {
+    title: "Technical Recruitment Consultant",
+    location: "Ho Chi Minh City, Vietnam",
+    type: "Full-time",
+    href: "/careers/technical-recruitment-consultant",
+  },
+  {
+    title: "IT Talent Sourcer",
+    location: "Ho Chi Minh City, Vietnam",
+    type: "Full-time",
+    href: "/careers/it-talent-sourcer",
+  },
+  {
+    title: "HR Consulting Associate",
+    location: "Ho Chi Minh City, Vietnam",
+    type: "Full-time",
+    href: "/careers/hr-consulting-associate",
+  },
 ];
 
 export default function Careers() {
@@ -22,7 +37,7 @@ export default function Careers() {
           {OPENINGS.map((job, i) => (
             <Reveal key={job.title} delay={i * 0.06}>
               <a
-                href="/careers/technical-recruitment-consultant"
+                href={job.href}
                 className="group flex flex-col items-start justify-between gap-4 p-6 transition-colors hover:bg-brand-50/40 sm:flex-row sm:items-center"
               >
                 <div>
