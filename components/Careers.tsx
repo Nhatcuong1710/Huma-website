@@ -22,7 +22,7 @@ export default function Careers() {
           {OPENINGS.map((job, i) => (
             <Reveal key={job.title} delay={i * 0.06}>
               <a
-                href="#contact"
+                href="/careers/technical-recruitment-consultant"
                 className="group flex flex-col items-start justify-between gap-4 p-6 transition-colors hover:bg-brand-50/40 sm:flex-row sm:items-center"
               >
                 <div>
