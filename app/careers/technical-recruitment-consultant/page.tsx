@@ -30,12 +30,48 @@ export default function TechnicalRecruitmentConsultant() {
         <li>English is a plus.</li>
       </ul>
 
-      <a
-        href="mailto:hr@huma.vn"
-        className="inline-block mt-10 rounded-lg bg-blue-600 px-6 py-3 text-white"
-      >
-        Apply Now
-      </a>
-    </main>
-  );
-}
+    <form
+  action="https://formspree.io/f/xzdlvdyq"
+  method="POST"
+  encType="multipart/form-data"
+  className="mt-10 space-y-4"
+>
+  <input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+    className="w-full border rounded-lg p-3"
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    required
+    className="w-full border rounded-lg p-3"
+  />
+
+  <input
+    type="text"
+    name="position"
+    defaultValue="Technical Recruitment Consultant"
+    readOnly
+    className="w-full border rounded-lg p-3 bg-gray-100"
+  />
+
+  <input
+    type="file"
+    name="cv"
+    accept=".pdf,.doc,.docx"
+    required
+    className="w-full"
+  />
+
+  <button
+    type="submit"
+    className="rounded-lg bg-blue-600 px-6 py-3 text-white"
+  >
+    Apply Now
+  </button>
+</form>
