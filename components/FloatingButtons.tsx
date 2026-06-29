@@ -51,7 +51,7 @@ export default function FloatingButtons() {
               transition={{ duration: 0.2, delay: i * 0.04 }}
               className={`flex h-12 w-12 items-center justify-center rounded-full ${action.bg} text-white shadow-card transition-transform hover:scale-110`}
             >
-              <action.icon className="h-5 w-5" />
+              {action.label === "Zalo" ? "Zalo" : action.label === "WhatsApp" ? "WA" : <action.icon className="h-5 w-5" />}
             </motion.a>
           ))}
       </AnimatePresence>
