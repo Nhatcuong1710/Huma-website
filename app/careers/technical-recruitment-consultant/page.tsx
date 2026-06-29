@@ -51,7 +51,13 @@ export default function TechnicalRecruitmentConsultant() {
           required
           className="w-full border rounded-lg p-3"
         />
-
+<input
+  type="tel"
+  name="phone"
+  placeholder="Phone Number (e.g. +84 912 345 678)"
+  required
+  className="w-full border rounded-lg p-3"
+/>
         <input
           type="text"
           name="position"
@@ -60,12 +66,19 @@ export default function TechnicalRecruitmentConsultant() {
           className="w-full border rounded-lg p-3 bg-gray-100"
         />
 
-        <input
-          type="file"
-          name="cv"
-          accept=".pdf,.doc,.docx"
-          className="w-full"
-        />
+        <div>
+  <label className="block mb-2 font-medium">
+    CV Link (Google Drive / Dropbox)
+  </label>
+
+  <input
+    type="url"
+    name="cv_link"
+    placeholder="https://drive.google.com/..."
+    required
+    className="w-full border rounded-lg p-3"
+  />
+</div>
 
         <button
           type="submit"
