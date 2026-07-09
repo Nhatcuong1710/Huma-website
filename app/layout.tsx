@@ -21,10 +21,15 @@ const body = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://www.humaconsulting.com.vn";
+const siteUrl = "https://huma.vn";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
+  icons: {
+  icon: "/favicon.ico",
+  shortcut: "/favicon.ico",
+  apple: "/favicon.ico",
+},
   title: {
     default: "HUMA Consulting | Technology Recruitment & HR Consulting in Vietnam",
     template: "%s | HUMA Consulting",
@@ -55,9 +60,7 @@ export const metadata: Metadata = {
     description:
       "Specialized technology recruitment and HR consulting partner in Vietnam.",
   },
-  icons: {
-    icon: "/logo.png",
-  },
+  
 };
 
 export default function RootLayout({
