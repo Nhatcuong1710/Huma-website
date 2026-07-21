@@ -70,24 +70,19 @@ export default function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
-            >
-              People.
-              <br />
-              Technology.
-              <br />
-              <span className="text-gradient">Growth.</span>
-            </motion.h1>
-
+              className="mt-6 font-display text-5xl font-extrabold leading-[1.05] tracking-tight ..."
+>         
+ Beyond Recruitment.
+<br />
+<span className="text-gradient">Built on Insight.</span>
+</motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
               className="mt-6 max-w-xl text-lg leading-relaxed text-slate-600"
             >
-              We help organizations build high-performing teams, optimize
-              people strategies, and leverage technology to drive sustainable
-              growth — one precise hire at a time.
+              We combine executive search, market intelligence and hiring insights to help technology companies hire smarter, faster and with greater confidence.
             </motion.p>
 
             <motion.div
